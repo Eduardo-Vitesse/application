@@ -1,0 +1,75 @@
+.hero {
+    width: 100%;
+    min-height: 515px;
+    background-image: url("/capa.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: -4;
+}
+
+.hero .efect {
+    width: 100%;
+    min-height: 515px;
+    background: linear-gradient(to right, var(--white-color), transparent);
+
+    display: flex;
+    align-items: center;
+}
+
+.hero .efect .heroContent {
+    width: 452px;
+    height: 152px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.hero .efect .heroContent h1 {
+    color: var(--yellow);
+    font-size: 55px;
+    font-weight: bold;
+}
+
+.hero .efect .heroContent p {
+    font-size: 18px;
+    color: var(--grey-primary);
+}
+
+.hero .efect .heroContent p>strong {
+    color: var(--grey-secondary);
+}
+
+.hero .efect .heroContent p>a {
+    color: var(--purple-primary);
+    text-decoration: underline;
+    font-weight: bolder;
+    cursor: pointer !important;
+}
+.hero .efect .heroContent p>a:hover {
+    cursor: pointer !important;
+}
+
+@media (max-width: 470px) {
+    .hero .efect .heroContent h1 {
+        font-size: 35px;
+    }
+    
+    .hero .efect .heroContent p {
+        width: 400px;
+    }
+}
+
+@media (max-width: 360px) {
+
+    .hero .efect .heroContent {
+        position: absolute;
+        top: 250px;
+    }
+
+    .hero .efect .heroContent p {
+        width: 300px;
+        font-size: 16px;
+    }
+}

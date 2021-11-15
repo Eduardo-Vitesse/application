@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  border: none;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+  width: 100%;
+  max-width: 1282px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+html,body {
+  overflow-x: hidden;
+}
+
+button {
+  background-color: transparent;
+  cursor: pointer;
+  transition: all .3s linear;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+:root {
+  --white-color: #F1F1F1;
+  --purple-primary: #A141EB;
+  --purplo-secondary: #7928B7;
+  --blue-light: #09CDF3;
+  --grey-primary: #848484;
+  --grey-secondary: #5B5B5B;
+  --yellow: #E1A607;
+}
+
+.activate {
+  display: block;
+}

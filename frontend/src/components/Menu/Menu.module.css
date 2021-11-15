@@ -1,0 +1,137 @@
+.header {
+    width: 100%;
+    height: 90px;
+    position: absolute;
+}
+
+.header .detail {
+    width: 58%;
+    height: 94px;
+    background-color: var(--purple-primary);
+    position: absolute;
+    z-index: -3;
+    border-radius: 0 0 47px 0;
+}
+
+.header nav{
+    display: flex;
+    justify-content: space-between;
+}
+
+.header nav .menu {
+    display: none;
+}
+
+.header nav .navigation {
+    width: 100%;
+    max-width: 850px;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header nav .navigation button {
+    width: 290px;
+    height: 55px;
+    padding: 0 24px 0 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 30px;
+    color: var(--white-color);
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.header nav .navigation button img {
+    margin-right: 13px;
+}
+
+.header nav .franqueado {
+    background-color: var(--yellow);
+}
+.header nav .consultor {
+    background-color: var(--purplo-secondary);
+}
+.header nav .comprar {
+    max-width: 213px;
+    background-color: var(--blue-light);
+}
+
+.header nav .restrito {
+    width: 213px;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 14px;
+    font-weight: bold;
+    background-color: var(--yellow);
+    padding: 0 24px 0 24px;
+    color: var(--white-color);
+    border-radius: 0 0 12px 12px;
+}
+
+/* MENU MOBILE */
+.header nav .navResponsive {
+    position: absolute;
+    top: 80px;
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: none;
+}
+
+.header nav .navResponsive button {
+    width: 100%;
+    height: 40px;
+    color: var(--white-color);
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    padding: 0 24px 0 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.header nav .navResponsive .franqueadoMobile {
+    background-color: var(--yellow);
+}
+
+.header nav .navResponsive .consultorMobile {
+    background-color: var(--purplo-secondary);
+}
+
+.header nav .navResponsive .comprarMobile {
+    background-color: var(--blue-light);
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 1100px) {
+    .header nav .navigation {
+        justify-content: flex-start;
+    }
+
+    .header nav .navigation button {
+        max-width: 30%;
+        height: 40px;
+        margin-right: 10px;
+    }
+}
+
+@media (max-width: 950px) {
+    .header .detail {
+        display: none;
+    }
+
+    .header nav .navigation {
+        display: none;
+    }
+
+    .header nav .menu {
+        display: block;
+        cursor: pointer;
+    }
+}
