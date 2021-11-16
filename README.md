@@ -1,6 +1,6 @@
 # Para rodar o projeto
 
-## 1 Cone o repositório
+## 1 Clone o repositório
 https://github.com/Eduardo-Vitesse/application.git
 
 ## 2 baixe os repositórios do backend
