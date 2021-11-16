@@ -3,6 +3,7 @@ import Menu from '../components/Menu'
 import SectionHero from '../components/SectionHero'
 import Footer from '../components/Footer'
 import Accordions from '../components/Accordions'
+import api from '../services/api'
 
 export default function Home({data}) {
 
@@ -27,10 +28,12 @@ export default function Home({data}) {
 }
 
 export async function getStaticProps(ctx) {
-  const res = await fetch(`http://localhost:5000/lista_duvidas`)
-  const data = await res.json()
+  const res = await api.get('/lista_duvidas')
 
   return {
-    props: {data},
+    props: {
+      data: res.data,
+    },
+    revalidate: 5
   }
 }
